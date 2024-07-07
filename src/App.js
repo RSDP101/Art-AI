@@ -23,7 +23,7 @@ const App = () => {
       let modelEndpoint = "";
 
       switch (activeCategory) {
-        case 'Anime':
+        case 'Retro':
           modelEndpoint = "https://api-inference.huggingface.co/models/sd-dreambooth-library/retro3d";
           break;
         case 'Cartoon':
@@ -71,10 +71,10 @@ const App = () => {
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}>
       <div style={{ marginBottom: '20px', display: 'flex', justifyContent: 'center' }}>
         <button
-          onClick={() => handleCategoryClick('Anime')}
-          style={{ padding: '10px 20px', fontSize: '16px', marginRight: '10px', backgroundColor: activeCategory === 'Anime' ? 'lightblue' : 'transparent', border: '1px solid black', borderRadius: '5px' }}
+          onClick={() => handleCategoryClick('Retro')}
+          style={{ padding: '10px 20px', fontSize: '16px', marginRight: '10px', backgroundColor: activeCategory === 'Retro' ? 'lightblue' : 'transparent', border: '1px solid black', borderRadius: '5px' }}
         >
-          Anime
+          Retro
         </button>
         <button
           onClick={() => handleCategoryClick('Cartoon')}
